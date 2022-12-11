@@ -1,4 +1,6 @@
 const express = require("express")
+require("express-async-errors")
+
 const { errorMiddleware } = require("./middleware/error")
 const { notFoundMiddleware } = require("./middleware/notFound")
 const { jwtRouter } = require("./router/jwtRouter")
